@@ -1,5 +1,5 @@
 import { Drawer } from "expo-router/drawer";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Colors } from "@/Constants/Colors";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -18,7 +18,7 @@ const renderLayout = (props: any) => (
       }}
     />
     <SafeAreaView style={{ flex: 1 }}>
-      <HeaderComponent />
+      <HeaderComponent {...props} />
       {props.children}
     </SafeAreaView>
   </View>
